@@ -1,23 +1,3 @@
-## ROS包常见问题
-### 缺少包报错，可使用
-~~~
-rospack find xxx 
-~~~
-### 判断该包是否已安装（如平时必须的一些包）
-可以在包的*package.xml* 中depend中加入该包的名字，重新编译该包，并运行
-~~~
-rosdep install xxx
-~~~
-### 安装所有包的依赖运行
-~~~
-rosdep install --from-paths src --ignore-src --rosdistro=melodic -y  
-~~~
-### 可在xxx.launch文件中找到包所使用的节点
-运行launch文件后，查看当前所有节点
-~~~
-rosnode list
-~~~
-
 ## Linux
 
 > UnixLinux 基础讲义.pdf
