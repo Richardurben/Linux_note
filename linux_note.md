@@ -7,6 +7,10 @@
 2. ctrl+f3 进入终端 黑白屏环境：top 一下 你会发现 gnome-shell 这个cpu 100% 就是这个桌面环境依赖的gnome-shell 和它的pid 确认下眼神，你可以 接着 kill -9 pid，系统还是会自动重启桌面也就是 gnome-shell 你等会 再按 ctrl+f1 切换会桌面环境登录即可。
 3. 这个方法 比较通用 就是按住你的 alt+Prc Sc SysRq 然后按顺序按 r e i s u b 这样便会重启你的系统。 这种方式对系统损伤最小。
 
+## ubuntu开机检查到错误报告
+sudo gedit /etc/default/apport
+
+enable=1 -> 0
 
 ## Linux分屏操作
 徽标键+左右箭头键 
