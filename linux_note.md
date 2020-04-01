@@ -296,9 +296,7 @@ i进入输入模式，esc退出
  
  Linux之间互相传输
  
- scp 。。。
- ！(https://github.com/Richardurben/figureformarkdown/raw/master/figures/scenery/pikwizard-54c114e95ea67829305254c85724a0d2.jpg)
- 
+
 ## Linux下的源代码编译
 
 * 从release下编译
@@ -339,11 +337,26 @@ $ sudo make install
 ~~~
 gcc -o 生成可执行文件的名字 源文件名字(可同时编译多个)
 ~~~
-
 3. 执行文件
 ~~~
 ./xxx
 ~~~
+
+## Linux下的网络分析(from github失效2020.3.20)
+curl https://richardurben.github.io  （80端口，443端口）
+
+ping richardurben.github.io   ->ttl
+
+my traceroute
+
+sudo mtr richardurben.github.io --tcp -P 80
+
+sudo mtr richardurben.github.io --tcp -P 443
+
+[端口分析](http://port.ping.pe/)
+
+
+
 
 
 
