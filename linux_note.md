@@ -19,7 +19,11 @@ wait...
 ~~~
 - 备份
 
-> [参考链接](https://blog.csdn.net/rechardchen123/article/details/90649208?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1)
+> [参考链接1](https://blog.csdn.net/rechardchen123/article/details/90649208?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1)
+> [参考链接2](https://www.cnblogs.com/linuxAndMcu/p/10774020.html#_label0)
+
+创建Live系统 ->(包含用户数据文件)->创建新的(wait)->转化为iso文件(小于4G)->插入u盘(写入设备直接制作系统)
+if sblive大于4G->使用cdrtools生成iso(具体参考上述链接2)
 
 ## ubuntu开机检查到错误报告
 sudo gedit /etc/default/apport
