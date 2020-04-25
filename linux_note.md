@@ -10,6 +10,7 @@
 ## 使用aria2下载百度网盘资源
 ### 参考链接
 > [csdn博客教程](https://blog.csdn.net/crazycui/article/details/52205908)
+
 > [github respo](https://github.com/aria2/aria2)
 ### 必要因素：
 1. chrome 插件百度网盘助手(aria2手动启动后才能下载)
