@@ -7,6 +7,22 @@
 2. ctrl+f3 进入终端 黑白屏环境：top 一下 你会发现 gnome-shell 这个cpu 100% 就是这个桌面环境依赖的gnome-shell 和它的pid 确认下眼神，你可以 接着 kill -9 pid，系统还是会自动重启桌面也就是 gnome-shell 你等会 再按 ctrl+f1 切换会桌面环境登录即可。
 3. 这个方法 比较通用 就是按住你的 alt+Prc Sc SysRq 然后按顺序按 r e i s u b 这样便会重启你的系统。 这种方式对系统损伤最小。
 
+## 使用aria2下载百度网盘资源
+### 参考链接
+> [csdn博客教程](https://blog.csdn.net/crazycui/article/details/52205908)
+> [github respo](https://github.com/aria2/aria2)
+### 必要因素：
+1. chrome 插件百度网盘助手(aria2手动启动后才能下载)
+2. aria2软件包
+3. 正确的配置文件(aria2.conf,aria2.session...)
+### 常用命令
+~~~
+启动
+sudo aria2c --conf-path=/etc/aria2/aria2.conf
+切后台
+sudo aria2c --conf-path=/etc/aria2/aria2.conf -D
+~~~
+
 ## ubuntu18.04系统备份(systemback)
 - 安装
 ~~~
