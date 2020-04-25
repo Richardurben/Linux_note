@@ -22,6 +22,8 @@
 
 ### 常用命令
 ~~~
+保存进程
+新建aria2.session空文件并开启写权限
 启动
 sudo aria2c --conf-path=/home/richardurben/aria2.conf
 切后台
