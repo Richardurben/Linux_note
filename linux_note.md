@@ -22,6 +22,24 @@
 sudo aria2c --conf-path=/etc/aria2/aria2.conf
 切后台
 sudo aria2c --conf-path=/etc/aria2/aria2.conf -D
+下载文件
+1. Download from WEB
+aria2c -c -s 5 http://example.org/mylinux.iso
+-c : 断点续传
+-s : 使用线程数
+2. Download from 2 sources
+aria2c http://a/f.iso   ftp://b/f.iso
+3. Download using 2 connections per host
+aria2c -x2 http://a/f.iso
+4. BitTorrent Magnet URI
+aria2c 'magnet:?xt=urn:btih:248D0A1CD08284299DE78D5C1ED359BB46717D8C'
+5. Metalink
+aria2c http://example.org/mylinux.metalink
+6. Download URIs found in text file
+aria2c -i uris.txt
+7. BT
+aria2c /tmp/CentOS-6.3-i386-bin-DVD1to2.torrent
+aria2c http://mirrors.163.com/centos/6.6/isos/x86_64/CentOS-6.6-x86_64-minimal.torrent
 ~~~
 
 ## ubuntu18.04系统备份(systemback)
