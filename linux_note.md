@@ -11,18 +11,23 @@
 ### 参考链接
 > [csdn博客教程](https://blog.csdn.net/crazycui/article/details/52205908)
 
-> [github respo](https://github.com/aria2/aria2)
+> [github respo1](https://github.com/aria2/aria2)
+
+> [github respo1](https://github.com/P3TERX/aria2.conf)
 ### 必要因素：
-1. chrome 插件百度网盘助手(aria2手动启动后才能下载)
+1. chrome 插件百度网盘助手/aria2 for chrome(aria2手动启动后才能下载)
 2. aria2软件包
 3. 正确的配置文件(aria2.conf,aria2.session...)
+4. 添加trackers from [github](https://github.com/ngosang/trackerslist) 使用[工具](http://edam.top/tk/)
+
 ### 常用命令
 ~~~
 启动
-sudo aria2c --conf-path=/etc/aria2/aria2.conf
+sudo aria2c --conf-path=/home/richardurben/aria2.conf
 切后台
 sudo aria2c --conf-path=/etc/aria2/aria2.conf -D
-下载文件
+
+下载文件使用命令行
 1. Download from WEB
 aria2c -c -s 5 http://example.org/mylinux.iso
 -c : 断点续传
@@ -40,6 +45,8 @@ aria2c -i uris.txt
 7. BT
 aria2c /tmp/CentOS-6.3-i386-bin-DVD1to2.torrent
 aria2c http://mirrors.163.com/centos/6.6/isos/x86_64/CentOS-6.6-x86_64-minimal.torrent
+
+下载文件使用客户端aria2 for chrome
 ~~~
 
 ## ubuntu18.04系统备份(systemback)
