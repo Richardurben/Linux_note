@@ -25,9 +25,9 @@
 保存进程
 新建aria2.session空文件并开启写权限
 启动
-sudo aria2c --conf-path=~/.aria2/aria2.conf
+sudo aria2c --conf-path=/home/richardurben/.aria2/aria2.conf
 切后台
-sudo aria2c --conf-path=~/.aria2/aria2.conf -D
+sudo aria2c --conf-path=/home/richardurben/.aria2/aria2.conf -D
 
 下载文件使用命令行
 1. Download from WEB
